@@ -53,7 +53,7 @@ extern crate walkdir;
 #[path = "linux/mod.rs"]
 mod sys;
 
-#[cfg(any(target_os = "macos", target_os = "freebsd"))]
+#[cfg(any(target_os = "macos", target_os = "ios", target_os = "freebsd"))]
 #[path = "unix/mod.rs"]
 mod sys;
 
